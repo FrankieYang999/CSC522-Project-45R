@@ -72,7 +72,7 @@ for(nn in 2:10)
     accuracies <- c(accuracies, myknncv(train, test, cl, k = nn, numFolds = 10))
 
 # plot k vs. 10-fold cv accuracy
-plot(2:10, accs, type = 'l', xlab = 'Number of nearest neighbors',
+plot(2:10, accuracies, type = 'l', xlab = 'Number of nearest neighbors',
      ylab = '10-fold cv accuracy',
      main = 'How K affects an estimate of test accuracy')
 
